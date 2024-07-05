@@ -1,54 +1,47 @@
 body {
   background-color: grey;
-  
 }
 
 .container {
   width: 90%;
   margin: 2rem auto;
-  /* background-color: white; */
-}
-
-table{
-  width: 100%;
-}
-
-.table-head {
-  background-color: rgb(210, 210, 242);
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 1rem;
-  border: none;
-}
-
-
-
-.table-head tr{
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.ctn {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgb(210, 210, 242);
+}
+
+thead th {
+  padding: 1rem;
   border: none;
+  border-bottom: 2px solid #ccc; 
+}
+
+tbody td {
+  text-align: left;
+  padding: 1rem;
+  border: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-image {
   width: 50px;
   height: 50px;
   object-fit: cover;
-}
-
-th{
-  /* width: 90px; */
-}
-
-td{
-  width: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

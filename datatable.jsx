@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApi } from '../apicontext';
-import '../../App.css'
+import '../../App.css';
 
 const DataTable = () => {
   const { catalog, loading, error } = useApi();
